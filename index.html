@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="calendar project">
-  <meta name="author" content="Егор Пелехов">
+  <meta name="author" content="Egor Pelekhov">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Календарь</title>
 </head>
 
@@ -21,14 +22,23 @@
     </div>
   </header>
 
-  <div>
+  <div class="flex">
     <main>
-      <div>
-        <p>Текущее время 12:30</p>
+      <div class="clock">
+        <div class="svg-container">
+          <svg viewBox="0 0 170 170" preserveAspectRatio="xMinYMin meet" class="svg-content">
+            <g>
+              <circle fill="#e5e5e5" cx="85" cy="85" r="80" id="svg_1" stroke="#000000"/>
+              <circle fill="#ffffff" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="85" cy="85" r="60" id="svg_3" stroke="#000000"/>
+              <circle fill="#b7b7b7" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="85" cy="85" r="12" id="svg_6"/>
+              <path fill="#7f7f7f" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m85,85c-34.062881,7.238552 -60.26359,12.406643 -78.125836,16.830203c3.929399,22.207461 23.116021,48.50038 50.584075,58.268569c8.30802,-24.128506 17.572139,-41.31887 27.541761,-75.098772z" id="svg_4" stroke="#000000"/>
+            </g>
+          </svg>
+        </div>
       </div>
 
       <h3>Задачи:</h3>
-      <ul>
+      <ul>          
         <li>08:30-09:00: запись 1</li>
         <li>09:30-10:00: запись 2</li>
         <li>10:30-11:00: запись 3</li>
@@ -37,7 +47,7 @@
       </ul>
     </main>
     <aside>
-      <table>
+      <table class="calendar">
         <caption>Апрель 2019</caption>
         <thead>
           <tr>
