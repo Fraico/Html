@@ -1,53 +1,41 @@
-header{
-display: flex;
-justify-content: center;
-}
-
-.flex{
-	display: flex;
-	width: 100%;	
-}
-
-aside, main{
-	border:1px solid grey;
-}
-
-aside {
-	width: 20%;
-	height: 80vmin;
+td {
+  border: 2px solid grey;
+  background: lightgrey;
+  empty-cells: hide;
 }
 
 main {
-	width: 80%;
-	height: 80vmin;	
+ padding-left: 10px;
+ padding-right: 10px;
 }
 
-.clock{
-	
-	width:25vmin;
-	height:25vmin;
-	border:2px solid grey;
-	display: inline-block;
-	vertical-align: top;
+table {
+  border-collapse: collapse;
 }
 
-.calendar{
-
-
+header {
+  display: flex;
+  padding-bottom: 7px;
+  justify-content: center;
 }
 
-.svg-container {
-	display: inline-block;
-	position: relative;
-	width: 100%;
-	padding-bottom: 100%;
-	vertical-align: middle;
-	overflow: hidden;
+main, aside {
+  border: 1px solid grey;
 }
 
-.svg-content {
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	left: 0;
+.flex {
+  flex: 1;
+  display: flex;
+}
+
+.clock {
+  min-width: 170px;
+}
+
+.side-left{
+  width: 25%;
+}
+
+.side-right{
+  width: 25%;
 }
