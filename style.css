@@ -34,8 +34,18 @@ main, aside {
 
 .side-left{
   width: 25%;
+  min-width: 170px;
 }
 
 .side-right{
   width: 25%;
+  min-width: 170px;
+}
+
+.today{
+  background: red;
+}
+
+.prevMonth{
+  color: darkgray;
 }
